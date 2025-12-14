@@ -1,0 +1,20 @@
+{
+  "date": "2025-12-03",
+  "entries": [
+    {
+      "time": "17:24:42",
+      "city_avg_density": 2.74003603740147,
+      "city_total_people": 10068
+    },
+    {
+      "time": "17:27:29",
+      "city_avg_density": 0.0,
+      "city_total_people": 0
+    },
+    {
+      "time": "17:31:17",
+      "city_avg_density": 2.74003603740147,
+      "city_total_people": 10068
+    }
+  ]
+}

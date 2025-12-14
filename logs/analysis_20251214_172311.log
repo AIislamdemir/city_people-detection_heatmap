@@ -1,0 +1,17 @@
+2025-12-14 17:23:11 | INFO     | CityDensityAnalyzer | Configuration saved to: results\last_run_config.yaml
+2025-12-14 17:23:11 | INFO     | CityDensityAnalyzer | Loading YOLO model: yolov8n.pt
+2025-12-14 17:23:11 | WARNING  | CityDensityAnalyzer | GPU not available: Torch not compiled with CUDA enabled. Using CPU
+2025-12-14 17:23:11 | INFO     | CityDensityAnalyzer | Processing district: District A
+2025-12-14 17:23:11 | INFO     | CityDensityAnalyzer | Processing District A: 1030 frames @ 30.0 FPS (34.4s)
+2025-12-14 17:23:11 | ERROR    | CityDensityAnalyzer | Application error
+Traceback (most recent call last):
+  File "c:\Users\monster\OneDrive\Masaüstü\PHYTON LESSONS\Github_PROJECTS\city_people_detection\main_person_counter2.py", line 1093, in main
+    heatmap, stats = analyzer.analyze_city()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monster\OneDrive\Masaüstü\PHYTON LESSONS\Github_PROJECTS\city_people_detection\main_person_counter2.py", line 578, in analyze_city
+    stats = self.processor.process_video(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monster\OneDrive\Masaüstü\PHYTON LESSONS\Github_PROJECTS\city_people_detection\main_person_counter2.py", line 450, in process_video
+    count, detections = self.detector.detect(frame)
+                        ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ProcessingConfig' object has no attribute 'detect'

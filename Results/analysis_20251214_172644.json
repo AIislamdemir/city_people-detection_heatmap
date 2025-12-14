@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "timestamp": "20251214_172644",
+    "date": "2025-12-14",
+    "version": "2.0.0",
+    "grid_shape": [
+      2,
+      2
+    ]
+  },
+  "configuration": {
+    "model": {
+      "path": "yolov8n.pt",
+      "confidence_threshold": 0.3,
+      "use_gpu": true,
+      "input_size": 640
+    },
+    "processing": {
+      "mode": 

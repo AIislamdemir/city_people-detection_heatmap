@@ -1,0 +1,49 @@
+districts:
+- name: District A
+  position:
+  - 0
+  - 0
+  video_path: videos/A_trialvideo.mp4
+  weight: 1.0
+- name: District B
+  position:
+  - 0
+  - 1
+  video_path: videos/B_trialvideo.mp4
+  weight: 1.0
+- name: District C
+  position:
+  - 1
+  - 0
+  video_path: videos/C_trialvideo.mp4
+  weight: 1.0
+- name: District D
+  position:
+  - 1
+  - 1
+  video_path: videos/D_trialvideo.mp4
+  weight: 1.0
+grid_shape:
+- 2
+- 2
+model:
+  confidence_threshold: 0.3
+  input_size: 640
+  path: yolov8n.pt
+  use_gpu: true
+output:
+  dpi: 300
+  export_formats:
+  - json
+  - csv
+  plot_style: default
+  results_dir: results
+  save_plots: true
+  save_results: true
+processing:
+  batch_size: 1
+  frame_skip: 3
+  max_frames: null
+  mode: balanced
+  resize_width: 640
+  show_preview: false

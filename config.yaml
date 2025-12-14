@@ -1,0 +1,61 @@
+# City People Density Analyzer Configuration
+# ==========================================
+
+# Model Configuration
+model:
+  path: "yolov8n.pt"  # Options: yolov8n.pt, yolov8s.pt, yolov8m.pt, yolov8l.pt, yolov8x.pt
+  confidence_threshold: 0.3  # Detection confidence threshold (0.0 - 1.0)
+  use_gpu: true  # Enable GPU acceleration if available
+  input_size: 640  # Input resolution for model
+
+# Processing Configuration
+processing:
+  mode: "balanced"  # Options: fast, balanced, accurate
+  frame_skip: 3  # Process every Nth frame (higher = faster but less accurate)
+  max_frames: null  # Limit processing to N frames (null = process all)
+  resize_width: 640  # Resize frame width for faster processing
+  batch_size: 1  # Batch size for inference
+  show_preview: false  # Show live preview window
+
+# Output Configuration
+output:
+  results_dir: "results"  # Output directory
+  save_results: true  # Save analysis results
+  save_plots: true  # Generate and save visualization plots
+  export_formats:  # Export formats (json, csv, excel, all)
+    - json
+    - csv
+  dpi: 300  # Plot resolution (DPI)
+  plot_style: "default"  # Matplotlib style (default, seaborn-darkgrid, ggplot)
+
+# District Definitions
+districts:
+  - name: "District A"
+    video_path: "videos/A_trialvideo.mp4"
+    position: [0, 0]  # Grid position [row, column]
+    weight: 1.0  # Weight for averaging (optional)
+  
+  - name: "District B"
+    video_path: "videos/B_trialvideo.mp4"
+    position: [0, 1]
+    weight: 1.0
+  
+  - name: "District C"
+    video_path: "videos/C_trialvideo.mp4"
+    position: [1, 0]
+    weight: 1.0
+  
+  - name: "District D"
+    video_path: "videos/D_trialvideo.mp4"
+    position: [1, 1]
+    weight: 1.0
+
+# Grid Configuration
+grid_shape: [2, 2]  # Heatmap grid size [rows, columns]
+
+# Advanced Settings (Optional)
+# advanced:
+#   enable_tracking: false  # Enable object tracking
+#   save_annotated_video: false  # Save video with bounding boxes
+#   min_detection_area: 100  # Minimum detection area (pixels)
+#   confidence_decay: 0.95  # Confidence decay for temporal smoothing

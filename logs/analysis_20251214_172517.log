@@ -1,0 +1,41 @@
+2025-12-14 17:25:17 | INFO     | CityDensityAnalyzer | Configuration saved to: results\last_run_config.yaml
+2025-12-14 17:25:17 | INFO     | CityDensityAnalyzer | Loading YOLO model: yolov8n.pt
+2025-12-14 17:25:17 | WARNING  | CityDensityAnalyzer | GPU not available: Torch not compiled with CUDA enabled. Using CPU
+2025-12-14 17:25:17 | INFO     | CityDensityAnalyzer | Processing district: District A
+2025-12-14 17:25:17 | INFO     | CityDensityAnalyzer | Processing District A: 1030 frames @ 30.0 FPS (34.4s)
+2025-12-14 17:25:30 | INFO     | CityDensityAnalyzer | ✅ District A: 771 people detected (avg: 2.2/frame) in 13.3s
+2025-12-14 17:25:30 | INFO     | CityDensityAnalyzer | Processing district: District B
+2025-12-14 17:25:30 | INFO     | CityDensityAnalyzer | Processing District B: 451 frames @ 30.0 FPS (15.0s)
+2025-12-14 17:25:36 | INFO     | CityDensityAnalyzer | ✅ District B: 295 people detected (avg: 2.0/frame) in 5.5s
+2025-12-14 17:25:36 | INFO     | CityDensityAnalyzer | Processing district: District C
+2025-12-14 17:25:36 | INFO     | CityDensityAnalyzer | Processing District C: 392 frames @ 30.0 FPS (13.1s)
+2025-12-14 17:25:40 | INFO     | CityDensityAnalyzer | ✅ District C: 250 people detected (avg: 1.9/frame) in 4.7s
+2025-12-14 17:25:40 | INFO     | CityDensityAnalyzer | Processing district: District D
+2025-12-14 17:25:40 | INFO     | CityDensityAnalyzer | Processing District D: 5404 frames @ 30.0 FPS (180.1s)
+2025-12-14 17:26:44 | INFO     | CityDensityAnalyzer | ✅ District D: 8,752 people detected (avg: 4.9/frame) in 63.4s
+2025-12-14 17:26:44 | ERROR    | CityDensityAnalyzer | Application error
+Traceback (most recent call last):
+  File "c:\Users\monster\OneDrive\Masaüstü\PHYTON LESSONS\Github_PROJECTS\city_people_detection\main_person_counter2.py", line 1097, in main
+    output_files = analyzer.save_results(heatmap, stats)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monster\OneDrive\Masaüstü\PHYTON LESSONS\Github_PROJECTS\city_people_detection\main_person_counter2.py", line 618, in save_results
+    json_path = self._save_json_report(heatmap, stats, timestamp, date_str)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\monster\OneDrive\Masaüstü\PHYTON LESSONS\Github_PROJECTS\city_people_detection\main_person_counter2.py", line 667, in _save_json_report
+    json.dump(report, f, indent=2, ensure_ascii=False)
+  File "C:\Users\monster\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "C:\Users\monster\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\monster\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\monster\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\monster\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\monster\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\monster\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ProcessingMode is not JSON serializable

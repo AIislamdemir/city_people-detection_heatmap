@@ -1,0 +1,19 @@
+2025-12-14 17:31:42 | INFO     | CityDensityAnalyzer | Configuration saved to: results\last_run_config.yaml
+2025-12-14 17:31:42 | INFO     | CityDensityAnalyzer | Loading YOLO model: yolov8n.pt
+2025-12-14 17:31:42 | WARNING  | CityDensityAnalyzer | GPU not available: Torch not compiled with CUDA enabled. Using CPU
+2025-12-14 17:31:42 | INFO     | CityDensityAnalyzer | Processing district: District A
+2025-12-14 17:31:42 | INFO     | CityDensityAnalyzer | Processing District A: 1030 frames @ 30.0 FPS (34.4s)
+2025-12-14 17:31:56 | INFO     | CityDensityAnalyzer | ✅ District A: 771 people detected (avg: 2.2/frame) in 13.4s
+2025-12-14 17:31:56 | INFO     | CityDensityAnalyzer | Processing district: District B
+2025-12-14 17:31:56 | INFO     | CityDensityAnalyzer | Processing District B: 451 frames @ 30.0 FPS (15.0s)
+2025-12-14 17:32:02 | INFO     | CityDensityAnalyzer | ✅ District B: 295 people detected (avg: 2.0/frame) in 6.3s
+2025-12-14 17:32:02 | INFO     | CityDensityAnalyzer | Processing district: District C
+2025-12-14 17:32:02 | INFO     | CityDensityAnalyzer | Processing District C: 392 frames @ 30.0 FPS (13.1s)
+2025-12-14 17:32:07 | INFO     | CityDensityAnalyzer | ✅ District C: 250 people detected (avg: 1.9/frame) in 5.5s
+2025-12-14 17:32:07 | INFO     | CityDensityAnalyzer | Processing district: District D
+2025-12-14 17:32:07 | INFO     | CityDensityAnalyzer | Processing District D: 5404 frames @ 30.0 FPS (180.1s)
+2025-12-14 17:33:17 | INFO     | CityDensityAnalyzer | ✅ District D: 8,752 people detected (avg: 4.9/frame) in 69.6s
+2025-12-14 17:33:17 | INFO     | CityDensityAnalyzer | 💾 JSON report saved: results\analysis_20251214_173317.json
+2025-12-14 17:33:17 | INFO     | CityDensityAnalyzer | 💾 CSV report saved: results\statistics_20251214_173317.csv
+2025-12-14 17:33:18 | INFO     | CityDensityAnalyzer | 💾 Heatmap saved: results\heatmap_20251214_173317.png
+2025-12-14 17:33:25 | INFO     | CityDensityAnalyzer | 💾 Dashboard saved: results\dashboard_20251214_173317.png

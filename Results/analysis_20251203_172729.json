@@ -1,0 +1,77 @@
+{
+  "timestamp": "20251203_172729",
+  "date": "2025-12-03",
+  "time": "17:27:29",
+  "config": {
+    "confidence_threshold": 0.3,
+    "frame_skip": 3
+  },
+  "districts": [
+    {
+      "total_people": 0,
+      "avg_people": 0.0,
+      "max_people": 0,
+      "min_people": 0,
+      "std_people": 0.0,
+      "processed_frames": 0,
+      "fps": 0.0,
+      "name": "District A",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "total_people": 0,
+      "avg_people": 0.0,
+      "max_people": 0,
+      "min_people": 0,
+      "std_people": 0.0,
+      "processed_frames": 0,
+      "fps": 0.0,
+      "name": "District B",
+      "position": [
+        0,
+        1
+      ]
+    },
+    {
+      "total_people": 0,
+      "avg_people": 0.0,
+      "max_people": 0,
+      "min_people": 0,
+      "std_people": 0.0,
+      "processed_frames": 0,
+      "fps": 0.0,
+      "name": "District C",
+      "position": [
+        1,
+        0
+      ]
+    },
+    {
+      "total_people": 0,
+      "avg_people": 0.0,
+      "max_people": 0,
+      "min_people": 0,
+      "std_people": 0.0,
+      "processed_frames": 0,
+      "fps": 0.0,
+      "name": "District D",
+      "position": [
+        1,
+        1
+      ]
+    }
+  ],
+  "heatmap": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ]
+}

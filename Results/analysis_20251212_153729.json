@@ -1,0 +1,77 @@
+{
+  "timestamp": "20251212_153729",
+  "date": "2025-12-12",
+  "time": "15:37:29",
+  "config": {
+    "confidence_threshold": 0.3,
+    "frame_skip": 3
+  },
+  "districts": [
+    {
+      "total_people": 771,
+      "avg_people": 2.241279069767442,
+      "max_people": 9,
+      "min_people": 0,
+      "std_people": 2.637483515439118,
+      "processed_frames": 344,
+      "fps": 29.97002997002997,
+      "name": "District A",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "total_people": 295,
+      "avg_people": 1.9536423841059603,
+      "max_people": 5,
+      "min_people": 0,
+      "std_people": 1.1354477970939225,
+      "processed_frames": 151,
+      "fps": 30.0,
+      "name": "District B",
+      "position": [
+        0,
+        1
+      ]
+    },
+    {
+      "total_people": 250,
+      "avg_people": 1.9083969465648856,
+      "max_people": 9,
+      "min_people": 0,
+      "std_people": 2.3588403855646587,
+      "processed_frames": 131,
+      "fps": 30.0,
+      "name": "District C",
+      "position": [
+        1,
+        0
+      ]
+    },
+    {
+      "total_people": 8752,
+      "avg_people": 4.856825749167592,
+      "max_people": 13,
+      "min_people": 0,
+      "std_people": 2.3463979340393593,
+      "processed_frames": 1802,
+      "fps": 30.0,
+      "name": "District D",
+      "position": [
+        1,
+        1
+      ]
+    }
+  ],
+  "heatmap": [
+    [
+      2.241279069767442,
+      1.9536423841059603
+    ],
+    [
+      1.9083969465648856,
+      4.856825749167592
+    ]
+  ]
+}
